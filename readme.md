@@ -1,4 +1,3 @@
 Integrantes:
 
-Mauricio Leite Alves
-Lenon Silva Gonçalves
+Mauricio Leite Alves e Lenon Silva Gonçalves

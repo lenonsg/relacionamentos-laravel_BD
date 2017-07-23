@@ -20,5 +20,21 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'email' => $faker->unique()->safeEmail,
         'password' => $password ?: $password = bcrypt('secret'),
         'remember_token' => str_random(10),
+        'cpf' => $faker->unique()->name,
+        'address' => $faker->name,
+        'telephone' => $faker->name,
+    ];
+});
+
+$factory->define(App\Product::class, function (Faker\Generator $faker) {
+
+    return [
+        'name' => $faker->name,
+        'price' => $faker->name,
+        'image' => $faker->name,
+        'remember_token' => str_random(10),
+        'type' => $faker->name,
+        'bar_code' => $faker->unique()->name,
+        'quantity_in_stock' => $faker->name,
     ];
 });
